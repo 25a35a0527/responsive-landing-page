@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelGo</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff7fb;
+  color: #1f2937;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header h2 {
+  color: #ec4899;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #ec4899;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fdf2f8;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #be185d;
+}
+
+.hero p {
+  margin: 10px 0;
+  color: #6b7280;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background: #ec4899;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #be185d;
+}
+
+/* FEATURES */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature-box {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 60px 20px;
+  background: #fce7f3;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* FOOTER */
+footer {
+  background: #831843;
+  color: #fbcfe8;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>TravelGo</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Explore the World 🌍</h1>
+  <p>Your journey begins here</p>
+  <a href="#" class="btn">Get Started</a>
+</section>
+
+<section class="features">
+  <h2>Feature Highlights</h2>
+
+  <div class="feature-container">
+    <div class="feature-box">
+      <h3>Top Destinations</h3>
+      <p>Discover amazing places worldwide.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Affordable Packages</h3>
+      <p>Best travel deals for everyone.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Easy Booking</h3>
+      <p>Quick and simple booking process.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>Testimonials</h2>
+
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <p>"Amazing experience!"</p>
+      <strong>- User 1</strong>
+    </div>
+
+    <div class="testimonial">
+      <p>"Loved the service."</p>
+      <strong>- User 2</strong>
+    </div>
+
+    <div class="testimonial">
+      <p>"Very smooth booking."</p>
+      <strong>- User 3</strong>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 TravelGo</p>
+</footer>
+
+</body>
+</html>
